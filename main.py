@@ -1,10 +1,10 @@
 import turtle
 
 def Square(x,y,size,color,angel):
-    #Do(Гоша)
+    #Do(Егор)
     print()
 def Triangle(x,y,size,color,angel):
-    #Do(Егор)
+    #Do(Гоша)
     print()
 def Parallelogram(x,y,size,color,angel):
     turtle.pendown ()
