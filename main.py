@@ -16,11 +16,7 @@ def Square(x,y,size,color,angel):
     turtle.forward ( size )
     turtle.right (90)
     turtle.forward ( size )
-    turtle.end_fill ()  
-    
-def Triangle(x,y,size,color,angel):
-    #Do(Gosha)
-    
+    turtle.end_fill ()
 def Parallelogram(x,y,size,color,angel):
     turtle.pendown ()
     turtle.color (color)
@@ -49,6 +45,6 @@ def Triangle(x,y,size,color,angel):
     turtle.right(60)
     turtle.forward(size)
     turtle.end_fill()
-Triangle(-200,200,300,"red",90)
-Parallelogram(0,0,100,"red",69)
+
+
 turtle.mainloop()
