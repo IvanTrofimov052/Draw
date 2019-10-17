@@ -1,7 +1,7 @@
 import turtle
 
 def Square(x,y,size,color,angel):
-    #Do(Егор)
+    #Do(Егор) коммитнулось проверка
     print()
 def Triangle(x,y,size,color,angel):
     #Do(Гоша)
