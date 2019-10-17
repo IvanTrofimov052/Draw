@@ -38,7 +38,19 @@ def Parallelogram(x,y,size,color,angel):
     turtle.right ( 60 )
     turtle.forward ( size )
     turtle.end_fill ()
-Parallelogram(100,100,100,'green',90)
+def Triangle(x,y,size,color,angel):
+    turtle.shape("turtle")
+    turtle.setx(x)
+    turtle.sety(y)
+    turtle.width(size)
+    turtle.color(color)
+    turtle.begin_fill()
+    turtle.pendown()
+    turtle.fd(size)
+    turtle.right(angel)
+    turtle.fd(size)
+    turtle.goto(x,y)
+    turtle.end_fill()
+Triangle(-200,200,300,"red",90)
+Parallelogram(100,10,10,'green',90)
 turtle.mainloop()
-
-
