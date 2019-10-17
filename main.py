@@ -47,5 +47,12 @@ def Triangle(x,y,size,color,angel):
     turtle.forward(size)
     turtle.end_fill()
 
+Square(0,0,160,'red',0)
+Triangle(-20,1,120,'green',60)
+Square(45,-45,70,"blue",-30)
+
+Parallelogram(0,150,160, 'yellow', 30)
+Parallelogram(65,190, 70,"black", 120)
+
 
 turtle.mainloop()
