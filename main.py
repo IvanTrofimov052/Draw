@@ -1,8 +1,26 @@
 import turtle
 
 def Square(x,y,size,color,angel):
-    #Do(Егор) коммитнулось проверка
-    print()
+    turtle.pendown ()
+    turtle.color (color)
+    turtle.penup ()
+    turtle.setx ( x )
+    turtle.sety ( y )
+    turtle.begin_fill ()
+    turtle.pendown ( )
+    turtle.right(angel)
+    turtle.forward (size)
+    turtle.right(90)
+    turtle.forward ( size )
+    turtle.right (90)
+    turtle.forward ( size )
+    turtle.right (90)
+    turtle.forward ( size )
+    turtle.end_fill ()  
+    
+def Triangle(x,y,size,color,angel):
+    #Do(Gosha)
+    
 def Parallelogram(x,y,size,color,angel):
     turtle.pendown ()
     turtle.color (color)
