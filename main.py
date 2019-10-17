@@ -46,7 +46,7 @@ def Triangle(x,y,size,color,angel):
     turtle.begin_fill()
     turtle.pendown()
     turtle.forward(size)
-    turtle.right(angel)
+    turtle.right(60)
     turtle.forward(size)
     turtle.end_fill()
 Triangle(-200,200,300,"red",90)
