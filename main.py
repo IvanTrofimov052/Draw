@@ -71,4 +71,8 @@ Square(-50, -250, 100, 'black', 0)
 Parallelogram(-100, 150, 200, '#800000', 75)
 Parallelogram(-25, 195, 100, 'black', -120)
 
+Square(600, -200, 100, 'black', 180)
+Triangle(650, -250, 200, 'black', -135)
+Triangle(370, -250, 200, 'black', 315)
+
 turtle.mainloop()
