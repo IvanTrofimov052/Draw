@@ -30,8 +30,8 @@ def Parallelogram(x, y, size, color, angel):
     turtle.pendown()
     turtle.color(color)
     turtle.penup()
-    turtle.setx( x )
-    turtle.sety( y )
+    turtle.setx(x)
+    turtle.sety(y)
     turtle.begin_fill()
     turtle.pendown()
     turtle.right(angel - angel_1)
@@ -55,7 +55,7 @@ def Triangle(x, y, size, color, angel):
     turtle.color(color)
     turtle.begin_fill()
     turtle.pendown()
-    turtle.right(angel-angel_1)
+    turtle.right(angel - angel_1)
     angel_1 = angel_1 + angel
     turtle.forward(size)
     turtle.right(90)
@@ -64,6 +64,6 @@ def Triangle(x, y, size, color, angel):
     if (angel_1 >= 360):
         angel_1 = angel_1 - 360
 
-Square(-100,100,200,'green',0)
+Square(-100, 100, 200, 'green', 0)
 
 turtle.mainloop()
