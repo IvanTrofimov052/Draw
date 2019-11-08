@@ -3,6 +3,8 @@ import turtle
 global angel_1
 angel_1 = 0
 turtle.speed(100000)
+
+
 def Square(x, y, size, color, angel):
     global angel_1
     turtle.pendown()
@@ -26,6 +28,7 @@ def Square(x, y, size, color, angel):
     turtle.forward(size)
     turtle.end_fill()
 
+
 def Parallelogram(x, y, size, color, angel):
     global angel_1
     turtle.pendown()
@@ -48,6 +51,7 @@ def Parallelogram(x, y, size, color, angel):
     turtle.right(60)
     turtle.forward(size)
     turtle.end_fill()
+
 
 def Triangle(x, y, size, color, angel):
     global angel_1
