@@ -12,8 +12,11 @@ def Square(x, y, size, color, angel):
     turtle.sety(y)
     turtle.begin_fill()
     turtle.pendown()
-    turtle.right(angel - angel_1)
-    angel_1 = angel_1 + angel
+    if(angel > angel_1):
+        turtle.right(angel - angel_1)
+    else:
+        turtle.right(angel_1 - angel)
+    angel_1 = angel
     turtle.forward(size)
     turtle.right(90)
     turtle.forward(size)
@@ -22,8 +25,6 @@ def Square(x, y, size, color, angel):
     turtle.right(90)
     turtle.forward(size)
     turtle.end_fill()
-    if (angel_1 >= 360):
-        angel_1 = angel_1 - 360
 
 def Parallelogram(x, y, size, color, angel):
     global angel_1
@@ -34,8 +35,11 @@ def Parallelogram(x, y, size, color, angel):
     turtle.sety(y)
     turtle.begin_fill()
     turtle.pendown()
-    turtle.right(angel - angel_1)
-    angel_1 = angel_1 + angel
+    if (angel > angel_1):
+        turtle.right(angel - angel_1)
+    else:
+        turtle.right(angel_1 - angel)
+    angel_1 = angel
     turtle.forward(size)
     turtle.right(60)
     turtle.forward(size)
@@ -44,8 +48,6 @@ def Parallelogram(x, y, size, color, angel):
     turtle.right(60)
     turtle.forward(size)
     turtle.end_fill()
-    if (angel_1 >= 360):
-        angel_1 = angel_1 - 360
 
 def Triangle(x, y, size, color, angel):
     global angel_1
@@ -55,24 +57,18 @@ def Triangle(x, y, size, color, angel):
     turtle.color(color)
     turtle.begin_fill()
     turtle.pendown()
-    turtle.right(angel - angel_1)
-    angel_1 = angel_1 + angel
+    if (angel > angel_1):
+        turtle.right(angel - angel_1)
+    else:
+        turtle.right(angel_1 - angel)
+    angel_1 = angel
     turtle.forward(size)
     turtle.right(90)
     turtle.forward(size)
     turtle.end_fill()
-    if (angel_1 >= 360):
-        angel_1 = angel_1 - 360
 
-Square(-100, -200, 200, 'green', 0)
-Triangle(-133, -200, 190, 'red', 45)
-Square(-50, -250, 100, 'black', 0)
-
-Parallelogram(-100, 150, 200, '#800000', 75)
-Parallelogram(-25, 195, 100, 'black', -120)
-
-Square(600, -200, 100, 'black', 180)
-Triangle(650, -250, 200, 'black', -135)
+Square(600, -200, 100, 'black', 0)
+Triangle(650, -250, 200, 'black', 45)
 Triangle(370, -250, 200, 'black', 315)
 
 turtle.mainloop()
