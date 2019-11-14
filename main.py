@@ -72,7 +72,7 @@ def Triangle(x, y, size, color, angel):
     turtle.end_fill ()
 
 
-#tree
+#Tree
 Square(-600, -200, 30, '#6e5614', 0)
 Triangle(-720, -200, 205, 'green', 45)
 Triangle(-675, -70, 150, 'green', 315)
@@ -88,9 +88,21 @@ Square ( 500, 148, 100, 'blue', 0 )
 Square ( 500, 148, 100, 'yellow', 0 )
 Square ( 500, 148, 100, 'silver', 270 )
 
-#home
+#Home
 Square(-600, 200, 200, '#6e5614', 0)
 Triangle(-840, 400, 205, 'red', 226)
 Square(-725, 275, 50, 'blue', 1)
+
+#House
+Square(-850, -150, 200, 'blue', 0)
+Triangle(-859, -150, 156, 'silver', 45)
+Square(-770, -170, 60, 'yellow', 0)
+Square(-730, -170, 60, 'yellow', 0)
+
+#Tree
+Square(-750, 50, 20, 'brown', 0)
+Triangle(-850, 70, 156, 'green', 135)
+Triangle(-820, 148, 110, 'green', -135)
+Triangle(-790, 210, 70, 'green', 135)
 
 turtle.mainloop()
