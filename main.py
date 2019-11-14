@@ -70,9 +70,16 @@ def Triangle(x, y, size, color, angel):
     turtle.right(90)
     turtle.forward(size)
     turtle.end_fill()
-
+    
+#Bat
 Square(600, -200, 100, 'black', 0)
 Triangle(650, -250, 200, 'black', 45)
 Triangle(370, -250, 200, 'black', 315)
+
+#Square
+Square(600, 148, 100, 'black', 0)
+Square(500, 148, 100, 'blue', 0)
+Square(500, 148, 100, 'yellow', 0)
+Square(500, 148, 100, 'silver', 270)
 
 turtle.mainloop()
